@@ -13,6 +13,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",  // for local dev
+    "https://techen.vercel.app/",
     "https://techen-services.vercel.app"  // your Vercel frontend
   ],
   credentials: true
