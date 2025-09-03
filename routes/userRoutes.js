@@ -12,10 +12,6 @@ const adminRoutes = require('./adminRoutes'); // ✅ include admin routes
 
 const router = express.Router();
 
-// =================== Auth Routes ===================
-//  router.post('/register', registerUser);
-//  router.post('/login', loginUser);
-
 // =================== User Routes ===================
 router.get('/profile', protect, getUserProfile);
 router.put('/profile', protect, updateUserProfile);
